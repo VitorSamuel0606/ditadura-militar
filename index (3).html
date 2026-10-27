@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arquivo Militar — Regime Brasileiro 1964-1985</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Roboto+Mono:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- TELA INICIAL: SALA MILITAR -->
+  <section id="sala" class="tela ativa">
+    <div class="overlay-escuro"></div>
+    <header class="header-sala">
+      <h1>ARQUIVO MILITAR</h1>
+      <p class="subtitulo">Regime Militar Brasileiro • 1964–1985</p>
+      <p class="instrucao">Clique nas pastas para consultar os documentos classificados</p>
+    </header>
+
+    <div class="mesa">
+      <div class="pasta" data-pasta="planejamento" onclick="abrirPasta('planejamento')">
+        <div class="pasta-aba">SECRETO</div>
+        <div class="pasta-corpo">
+          <span class="pasta-titulo">01 — Início do Golpe</span>
+          <span class="pasta-desc">Planejamento e articulações</span>
+        </div>
+      </div>
+
+      <div class="pasta" data-pasta="acao" onclick="abrirPasta('acao')">
+        <div class="pasta-aba">CONFIDENCIAL</div>
+        <div class="pasta-corpo">
+          <span class="pasta-titulo">02 — O Golpe em Ação</span>
+          <span class="pasta-desc">31 de março a 2 de abril de 1964</span>
+        </div>
+      </div>
+
+      <div class="pasta" data-pasta="primeiros" onclick="abrirPasta('primeiros')">
+        <div class="pasta-aba">INTERNO</div>
+        <div class="pasta-corpo">
+          <span class="pasta-titulo">03 — Poder e Regime</span>
+          <span class="pasta-desc">Primeiros anos e institucionalização</span>
+        </div>
+      </div>
+
+      <div class="pasta" data-pasta="manifestacoes" onclick="abrirPasta('manifestacoes')">
+        <div class="pasta-aba">RESTRITO</div>
+        <div class="pasta-corpo">
+          <span class="pasta-titulo">04 — Regime e Manifestações</span>
+          <span class="pasta-desc">Ruas, protestos e repressão</span>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-sala">
+      <p>Documento de caráter histórico e educacional • Memória e Verdade</p>
+    </footer>
+  </section>
+
+  <!-- PASTA 1: PLANEJAMENTO -->
+  <section id="planejamento" class="tela pasta-conteudo">
+    <div class="barra-topo estilo-secreto">
+      <button class="btn-voltar" onclick="voltarSala()">← Voltar à Sala</button>
+      <h2>PASTA 01 — INÍCIO DO GOLPE: PLANEJAMENTO</h2>
+      <span class="carimbo">SECRETO</span>
+    </div>
+    <div class="conteudo-documento">
+      <article class="doc">
+        <h3>Contexto e Articulações (1961–1964)</h3>
+        <p>O governo de João Goulart (Jango), que assumiu a Presidência em 1961 após a renúncia de Jânio Quadros, promoveu as chamadas “reformas de base” (agrária, urbana, educacional e eleitoral). A polarização política cresceu rapidamente entre setores conservadores, militares, empresários e parte da classe média, de um lado, e sindicatos, estudantes e grupos de esquerda, do outro.</p>
+        
+        <p>Desde o final de 1961 e especialmente a partir de 1962–1963, grupos civis e militares passaram a articular a deposição de Goulart. Institutos como o IPES (Instituto de Pesquisas e Estudos Sociais) e o IBAD (Instituto Brasileiro de Ação Democrática) produziram propaganda anticomunista e financiaram oposição. Empresários, setores da imprensa e da Igreja Católica, além de governadores como Carlos Lacerda (Guanabara) e Magalhães Pinto (Minas Gerais), participaram ativamente das articulações.</p>
+
+        <h3>Apoio Externo e Planos de Contingência</h3>
+        <p>Documentos desclassificados mostram que o governo dos Estados Unidos acompanhou de perto a crise brasileira. O embaixador Lincoln Gordon e a CIA mantiveram contatos com conspiradores. Foi elaborada a Operação Brother Sam, um plano de contingência que previa apoio logístico (petróleo, armas e eventual presença naval) caso houvesse resistência militar prolongada ao movimento golpista.</p>
+
+        <h3>Preparativos Militares</h3>
+        <p>No interior das Forças Armadas, generais como Humberto de Alencar Castelo Branco (chefe do Estado-Maior do Exército) e outros oficiais alinharam posições. Em Minas Gerais, o general Olympio Mourão Filho organizou um “Estado-Maior Revolucionário” ainda em 1963 para estudar a deflagração do movimento. O clima se agravou com o Comício da Central do Brasil (13 de março de 1964) e a Marcha da Família com Deus pela Liberdade, que pediam abertamente a intervenção militar.</p>
+
+        <p class="nota-final">Esta pasta encerra no momento em que o plano estava montado, mas ainda não havia sido deflagrado.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PASTA 2: O GOLPE EM AÇÃO -->
+  <section id="acao" class="tela pasta-conteudo">
+    <div class="barra-topo estilo-confidencial">
+      <button class="btn-voltar" onclick="voltarSala()">← Voltar à Sala</button>
+      <h2>PASTA 02 — O GOLPE EM AÇÃO</h2>
+      <span class="carimbo">CONFIDENCIAL</span>
+    </div>
+    <div class="conteudo-documento estilo-timeline">
+      <article class="doc">
+        <h3>Cronologia dos dias decisivos</h3>
+
+        <div class="evento">
+          <div class="data">31 de março de 1964 — Madrugada</div>
+          <p>O general Olympio Mourão Filho, comandante da 4ª Região Militar em Juiz de Fora (MG), deflagra o movimento. Por volta das 5h–6h, tropas do Destacamento Tiradentes (cerca de 2.700 a 3.000 homens) começam a se deslocar em direção ao Rio de Janeiro. O levante foi antecipado em relação à data originalmente prevista (início de abril).</p>
+        </div>
+
+        <div class="evento">
+          <div class="data">31 de março — Manhã e tarde</div>
+          <p>O governador Magalhães Pinto declara estado de beligerância em Minas. Castelo Branco e outros generais são informados. João Goulart, no Rio de Janeiro, tenta mobilizar o “dispositivo militar” leal. Adesões começam a surgir.</p>
+        </div>
+
+        <div class="evento">
+          <div class="data">1º de abril</div>
+          <p>O II Exército (São Paulo), sob o general Amaury Kruel, adere ao movimento. O IV Exército (Recife) também se junta e prende o governador Miguel Arraes. Goulart viaja do Rio para Brasília e depois para Porto Alegre. O I Exército (Rio) se rende.</p>
+        </div>
+
+        <div class="evento">
+          <div class="data">2 de abril — Madrugada</div>
+          <p>O presidente do Senado, Auro de Moura Andrade, declara vaga a Presidência da República, com base em interpretação do artigo 85 da Constituição de 1946 (embora Goulart ainda estivesse em território nacional). Forma-se o Comando Supremo da Revolução (generais do Exército, Marinha e Aeronáutica).</p>
+        </div>
+
+        <div class="evento destaque">
+          <div class="data">Consolidação do poder</div>
+          <p>Em menos de 48 horas, sem resistência militar significativa, os militares tomam o controle do Estado. Ranieri Mazzilli assume interinamente. O caminho para a eleição indireta de Castelo Branco estava aberto.</p>
+        </div>
+
+        <p class="nota-final">Esta pasta termina no instante em que os militares assumem o poder e a Junta se consolida.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PASTA 3: PRIMEIROS ANOS -->
+  <section id="primeiros" class="tela pasta-conteudo">
+    <div class="barra-topo estilo-interno">
+      <button class="btn-voltar" onclick="voltarSala()">← Voltar à Sala</button>
+      <h2>PASTA 03 — PODER E REGIME: OS PRIMEIROS ANOS</h2>
+      <span class="carimbo">INTERNO</span>
+    </div>
+    <div class="conteudo-documento">
+      <article class="doc">
+        <h3>Do golpe ao regime institucionalizado</h3>
+        <p>Após a tomada do poder, os militares não devolveram o governo aos civis. Em 9 de abril de 1964 foi editado o <strong>Ato Institucional nº 1 (AI-1)</strong>, redigido por Francisco Campos. O AI-1 legitimou o movimento como “revolução”, concedeu poderes excepcionais ao Executivo, permitiu cassações de mandatos e suspensão de direitos políticos por 10 anos, e estabeleceu eleição indireta para presidente.</p>
+
+        <h3>Governo Castelo Branco (1964–1967)</h3>
+        <p>Humberto de Alencar Castelo Branco foi eleito pelo Congresso e tomou posse em 15 de abril de 1964. Seu governo consolidou os mecanismos de controle:</p>
+        <ul>
+          <li><strong>AI-2 (27 de outubro de 1965)</strong>: dissolveu os partidos existentes, criou o bipartidarismo (ARENA – situação; MDB – oposição consentida), reforçou poderes do presidente (estado de sítio, intervenção nos estados) e ampliou o STF.</li>
+          <li><strong>AI-3 (1966)</strong>: estabeleceu eleições indiretas para governadores e prefeitos das capitais nomeados.</li>
+          <li><strong>AI-4 (1966)</strong>: convocou o Congresso como Assembleia Constituinte.</li>
+        </ul>
+        <p>Em 1967 entrou em vigor a nova Constituição, que incorporava muitos dos poderes excepcionais dos Atos Institucionais. O que havia sido apresentado como intervenção temporária transformou-se em regime autoritário permanente.</p>
+
+        <h3>Características do novo poder</h3>
+        <p>Cassações de políticos (incluindo Juscelino Kubitschek), controle da imprensa, intervenção em sindicatos, proibição de greves e início da doutrina de Segurança Nacional. O Executivo concentrou poderes em detrimento do Legislativo e do Judiciário.</p>
+
+        <p class="nota-final">Ao final deste período, o Brasil já vivia sob um regime militar institucionalizado, com regras próprias acima da antiga ordem constitucional.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PASTA 4: MANIFESTAÇÕES -->
+  <section id="manifestacoes" class="tela pasta-conteudo">
+    <div class="barra-topo estilo-restrito">
+      <button class="btn-voltar" onclick="voltarSala()">← Voltar à Sala</button>
+      <h2>PASTA 04 — O REGIME E AS MANIFESTAÇÕES</h2>
+      <span class="carimbo">RESTRITO</span>
+    </div>
+    <div class="conteudo-documento estilo-ruas">
+      <article class="doc">
+        <h3>A oposição nas ruas (1966–1968)</h3>
+        <p>A partir de 1966, especialmente entre estudantes e setores da classe média, cresceram as manifestações contra a política econômica recessiva e o autoritarismo. A União Nacional dos Estudantes (UNE), mesmo na clandestinidade, organizou protestos e congressos.</p>
+
+        <div class="galeria-fotos">
+          <div class="foto-placeholder">
+            <div class="foto-quadro">
+              <span class="foto-legenda">Espaço reservado para foto histórica<br>Manifestação estudantil – Rio de Janeiro</span>
+            </div>
+          </div>
+          <div class="foto-placeholder">
+            <div class="foto-quadro">
+              <span class="foto-legenda">Espaço reservado para foto histórica<br>Passeata dos Cem Mil – 26 de junho de 1968</span>
+            </div>
+          </div>
+          <div class="foto-placeholder">
+            <div class="foto-quadro">
+              <span class="foto-legenda">Espaço reservado para foto histórica<br>Protestos após a morte de Edson Luís</span>
+            </div>
+          </div>
+          <div class="foto-placeholder">
+            <div class="foto-quadro">
+              <span class="foto-legenda">Espaço reservado para foto histórica<br>Greves operárias e confrontos de rua</span>
+            </div>
+          </div>
+        </div>
+
+        <h3>Marcos das manifestações</h3>
+        <p>Em março de 1968, a morte do estudante Edson Luís de Lima Souto, no Rio de Janeiro, gerou grande comoção e intensificou os protestos. Em 26 de junho de 1968 ocorreu a <strong>Passeata dos Cem Mil</strong>, a maior manifestação popular desde o golpe, reunindo artistas, intelectuais, estudantes e setores da sociedade civil com a palavra de ordem “Abaixo a ditadura, povo no poder”.</p>
+
+        <p>O regime respondeu com aumento da repressão. Em julho de 1968 as manifestações públicas foram proibidas. Em outubro, mais de mil estudantes foram presos no Congresso da UNE em Ibiúna (SP).</p>
+
+        <h3>O endurecimento final desta fase</h3>
+        <p>O crescimento da contestação nas ruas e a radicalização de grupos de esquerda armada levaram o governo Costa e Silva a editar, em 13 de dezembro de 1968, o Ato Institucional nº 5 (AI-5). O AI-5 suspendeu o habeas corpus, permitiu o fechamento do Congresso, cassações e censura prévia, inaugurando o período mais duro da ditadura — os “anos de chumbo”.</p>
+
+        <div class="aviso-final">
+          <p><strong>Nota:</strong> Nesta pasta registra-se que a repressão atingiu níveis extremos, incluindo tortura e desaparecimentos. Os casos individuais, nomes e relatos de pessoas torturadas serão tratados em pasta posterior dedicada à memória e à justiça.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
